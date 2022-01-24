@@ -1,6 +1,9 @@
 //Void
 
 //Tipo Explícito
-function showInfo(user: any) {
-  console.log(user);
+function showInfo(user: any): any {
+  console.log("User Info", user.id, user.username, user.firstName);
+  // return "hola";
 }
+
+showInfo({ id: 1, username: "raptorjm", firstName: "Josué" });
